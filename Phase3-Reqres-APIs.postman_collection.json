@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "9d6b73b4-5836-4219-a7e8-164abf0503c7",
+		"name": "Phase3-Reqres-APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"console.info(\"Test List User using Status Code\")",
+							"pm.test(\"List User\", function () {",
+							"    pm.response.to.have.status(200);",
+							"    console.info(\"Actual Response Code for the API Response is \" + responseCode.code);  ",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{hostname}}/api/users?page=2",
+					"protocol": "https",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"console.info(\"Test Create User using Status Code\")",
+							"pm.test(\"Create User\", function () {",
+							"    pm.response.to.have.status(201);",
+							"    console.info(\"Actual Response Code for the API Response is \" + responseCode.code);",
+							"    console.info(responseBody);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"krishna\",\n    \"job\": \"manager\"\n}"
+				},
+				"url": {
+					"raw": "https://{{hostname}}/api/users",
+					"protocol": "https",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"console.info(\"Test List User using Status Code\")",
+							"pm.test(\"List User\", function () {",
+							"    pm.response.to.have.status(200);",
+							"    console.info(\"Actual Response Code for the API Response is \" + responseCode.code);  ",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{hostname}}/api/users?page=2",
+					"protocol": "https",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"console.info(\"Test Update User using Status Code\")",
+							"pm.test(\"Create User\", function () {",
+							"    pm.response.to.have.status(200);",
+							"    console.info(\"Actual Response Code for the API Response is \" + responseCode.code);",
+							"    console.info(responseBody);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"krishna\",\n    \"job\": \"manager\"\n}"
+				},
+				"url": {
+					"raw": "https://{{hostname}}/api/users",
+					"protocol": "https",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"console.info(\"Test Delete User using Status Code\")",
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"    console.info(\"Actual Response Code for the API Response is \" + responseCode.code);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://{{hostname}}/api/users/2",
+					"protocol": "https",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

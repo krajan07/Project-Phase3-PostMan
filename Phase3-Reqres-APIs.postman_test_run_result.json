@@ -1,0 +1,208 @@
+{
+	"id": "9582b507-5916-4692-9679-a0cc39d2b27f",
+	"name": "Phase3-Reqres-APIs",
+	"timestamp": "2021-11-03T01:11:09.726Z",
+	"collection_id": "11081832-9d6b73b4-5836-4219-a7e8-164abf0503c7",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 15,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "0cd45f26-ab2b-4fa8-b6d8-6854101b77a5",
+			"name": "List Users",
+			"time": 91,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"List User": true
+			},
+			"testPassFailCounts": {
+				"List User": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				127,
+				94,
+				91
+			],
+			"allTests": [
+				{
+					"List User": true
+				},
+				{
+					"List User": true
+				},
+				{
+					"List User": true
+				}
+			]
+		},
+		{
+			"id": "e15500ff-6c04-40ce-ad9f-5c9e68d56380",
+			"name": "Create User",
+			"time": 485,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Create User": true
+			},
+			"testPassFailCounts": {
+				"Create User": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				1006,
+				563,
+				485
+			],
+			"allTests": [
+				{
+					"Create User": true
+				},
+				{
+					"Create User": true
+				},
+				{
+					"Create User": true
+				}
+			]
+		},
+		{
+			"id": "0b87ac02-9d11-4428-9356-23aa28a4f1dc",
+			"name": "Read Users",
+			"time": 92,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"List User": true
+			},
+			"testPassFailCounts": {
+				"List User": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				90,
+				97,
+				92
+			],
+			"allTests": [
+				{
+					"List User": true
+				},
+				{
+					"List User": true
+				},
+				{
+					"List User": true
+				}
+			]
+		},
+		{
+			"id": "f32ed80b-3918-4849-b2d0-ff4bc3e32e87",
+			"name": "Update User",
+			"time": 575,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Create User": true
+			},
+			"testPassFailCounts": {
+				"Create User": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				456,
+				778,
+				575
+			],
+			"allTests": [
+				{
+					"Create User": true
+				},
+				{
+					"Create User": true
+				},
+				{
+					"Create User": true
+				}
+			]
+		},
+		{
+			"id": "da373601-765b-4d59-9401-962acf3c48f9",
+			"name": "Delete User",
+			"time": 597,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				594,
+				593,
+				597
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				},
+				{
+					"Status code is 204": true
+				},
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 3,
+	"totalTime": 6238,
+	"collection": {
+		"requests": [
+			{
+				"id": "0cd45f26-ab2b-4fa8-b6d8-6854101b77a5",
+				"method": "GET"
+			},
+			{
+				"id": "e15500ff-6c04-40ce-ad9f-5c9e68d56380",
+				"method": "POST"
+			},
+			{
+				"id": "0b87ac02-9d11-4428-9356-23aa28a4f1dc",
+				"method": "GET"
+			},
+			{
+				"id": "f32ed80b-3918-4849-b2d0-ff4bc3e32e87",
+				"method": "PUT"
+			},
+			{
+				"id": "da373601-765b-4d59-9401-962acf3c48f9",
+				"method": "DELETE"
+			}
+		]
+	}
+}
